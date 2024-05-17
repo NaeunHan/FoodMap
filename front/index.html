@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="파이리코딩" />
+    <meta name="description" content="맛집지도 서비스" />
+    <meta
+        name="keywords"
+        content="파이리코딩, 맛집지도, 맛집위치, 맛집유튜버"
+    />
+    
+    <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/map.css" />
+
+</head>
+
+<body>
+  <nav>
+    <div class="inner">
+      <div class="nav-container">
+        <h1 class="nav-title"><a href="./index.html">맛집지도</a></h1>
+        <button class="nav-contact" onclick="alert('메세지')">Contact</button>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <section id="category">
+      <div class="inner">
+        <div class="category-container">
+          <h2 class="category-title">🧸맛집지도 카테고리를 선택해보세요🧸</h2>
+        <div class="category-list">
+        <button class="category-item" id="korea">한식</button>
+        <button class="category-item" id="china">중식</button>
+        <button class="category-item" id="japan">일식/이자카야</button>
+        <button class="category-item" id="america">양식</button>
+        <button class="category-item" id="wheat">분식</button>
+        <button class="category-item" id="meat">구이</button>
+        <button class="category-item" id="sushi">회/초밥</button>
+        <button class="category-item" id="cafe">카페</button>
+        </div>
+      </div>
+    </div> 
+    </section>
+
+    <!-- 카테고리 -->
+    <div id="map" class="inner"></div>
+
+    
+    <!-- 카카오지도 -->
+  </main>
+
+  <script 
+    type="text/javascript" 
+    src="//dapi.kakao.com/v2/maps/sdk.js?appkey=4a155c20c3a893d9513933fd5c53e79a&libraries=services">    
+  </script>
+
+  <!-- jQuery CDN -->
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.7/axios.min.js" 
+    integrity="sha512-NQfB/bDaB8kaSXF8E77JjhHG5PM6XVRxvHzkZiwl3ddWCEPBa23T76MuWSwAJdMGJnmQqM0VeY9kFszsrBEFrQ==" 
+    crossorigin="anonymous" 
+    referrerpolicy="no-referrer"></script>
+
+    <script src="./js/script.js"></script>
+    <script src="./js/url.js"></script>
+  </body>
+</html>
